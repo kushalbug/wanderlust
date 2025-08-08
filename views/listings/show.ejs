@@ -150,3 +150,27 @@
     </div>
   </div>
 </div>
+
+<!-- <div class="row">
+      <% for (let review of listing.reviews) { %>
+      <div class="card mb-3">
+        <div class="card-body">
+          <p><%= review.body %></p>
+          <p><b>Rating:</b> <%= review.rating %>/5</p>
+          <p><%= review.author.username %></p>
+
+          <% if (currUser && review.author &&
+          review.author._id.equals(currUser._id)) { %>
+          <form
+            action="/listings/<%= listing._id %>/reviews/<%= review._id %>?_method=DELETE"
+            method="POST"
+            class="mb-2"
+          >
+            <button class="btn btn-sm btn-danger">Delete</button>
+          </form>
+          <% } %>
+        </div>
+      </div>
+      <% } %>
+    </div>
+</div> -->
